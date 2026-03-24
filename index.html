@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bootstrap Project</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+.hero {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<a class="navbar-brand" href="#">MySite</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+<h1>Modern Bootstrap UI</h1>
+<p>Clean, Responsive & Attractive Design</p>
+<button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#demoModal">
+Get Started
+</button>
+</section>
+
+<!-- Carousel -->
+<div id="carouselExample" class="carousel slide container mt-5">
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="https://via.placeholder.com/1200x400" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+<img src="https://via.placeholder.com/1200x400/555" class="d-block w-100">
+</div>
+
+</div>
+
+<button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+
+<!-- Cards -->
+<div class="container mt-5">
+<div class="row text-center">
+
+<div class="col-md-4">
+<div class="card p-3">
+<h3>Fast</h3>
+<p>High performance website</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h3>Responsive</h3>
+<p>Mobile friendly UI</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3">
+<h3>Modern</h3>
+<p>Clean design layout</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="demoModal">
+<div class="modal-dialog">
+<div class="modal-content p-4 text-center">
+<h4>Welcome!</h4>
+<p>This is a Bootstrap modal</p>
+<button class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+<p>© 2026 MySite</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
